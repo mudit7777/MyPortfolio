@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mudit Arora | Home</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="60x60" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="76x76" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="120x120" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="144x144" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="152x152" href="maLogo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="maLogo.jpg">
+    <link rel="icon" type="image/png" sizes="192x192" href="/imgs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/imgs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon-16x16.png">
+    <link rel="manifest" href="/imgs/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/horta" type="text/css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script src="https://kit.fontawesome.com/bc46329bfe.js" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  </script>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on("click", function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $("html, body").animate({
+                            scrollTop: $(hash).offset().top,
+                        },
+                        1200,
+                        function() {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        }
+                    );
+                } // End if
+            });
+        });
+    </script>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+</style>
+
+<body id="woosh" class="dark-theme">
+    <section id="first">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="bx bx-menu-alt-right"></i>
+            </label>
+            <label class="logo">
+                <img class="logopic" src="maLogo.jpg" alt="" />
+            </label>
+            <ul>
+                <li data-text="About" class="opac active">
+                    <a href="#about-section">About</a>
+                </li>
+                <li data-text="Skills" class="opac">
+                    <a href="#skillsec">Skills</a>
+                </li>
+                <li data-text="Projects" class="opac">
+                    <a href="#projectssec">Projects</a>
+                </li>
+
+                <li data-text="Contact" class="opac">
+                    <a href="#footer">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="text-container">
+            <p>Hello, I am</p>
+            <p>Mudit Arora</p>
+            <p>I am a <span class="type"></span></p>
+            <script type="text/javascript" src="typed.js"></script>
+            <script type="text/javascript">
+                var typed = new Typed(".type", {
+                    strings: [
+                        "Software Developer",
+                        "Competitive Programmer",
+                        "Web Developer",
+                        "Tech Enthusiast",
+                    ],
+                    typeSpeed: 50,
+                    backSpeed: 30,
+                    loop: true, // Default value
+                });
+            </script>
+            <!--
+        <div class="socialmedia"></span>
+          <a href="#"><i class="fab fa-linkedin sectionlogo1"></i></a>
+          <a href="#"><i class="fab fa-github sectionlogo1"></i></a>
+        </div>
+      -->
+
+            <a href="MuditArora_Resume_new.pdf" download><button class="down-cv">Download Resume</button></a>
+        </div>
+        <img src="reacthome.svg" alt="model" class="model" />
+        <div class="dropdown" id="firstdown">
+            <a href="#about-section"><img src="downarrow.png" alt="" /></a>
+        </div>
+    </section>
+
+    <div class="about-container" id="about-section">
+        <img src="About.svg" id="aboutimg" alt="" />
+
+        <div class="about-text" id="abouttext">
+            <p>About Me</p>
+            <p>A few words</p>
+            <p>Hello, 👋🏻 my name is Mudit Arora, an aspiring Software Developer And Enthusiast Learner. Familiar with Technologies like HTML, CSS, JavaScript, Java, Node.js. I'm currently in my Final year pursuing Bachelor's degree in Computer Science and Engineering
+                from Panipat Institute Of Engineering And Technology, Panipat.
+            </p>
+
+            <a href="MuditArora_Resume_new.pdf" download> <button>Download Resume</button></a>
+        </div>
+    </div>
+
+    <div class="about-container" id="about-section">
+        <img src="leetcode.logo.circle.png" id="aboutimg" alt="" />
+
+        <div class="about-text" id="abouttext">
+            <p>DSA Skills</p>
+            <p>LeetCode</p>
+            <p>Problem Solving daily enhances coding accummen and thought process, I have solved around 250+ problems on Leetcode.com based on Recursion & Backtracking, Arrays, LinkedList, Stack & Queues, Heap and Algorithms such as Binary Search, Two Pointers, Dutch National Flag and various sorting algorithms</p>
+            <a href="https://leetcode.com/muditarora26/" download> <button>LeetCode Profile</button></a>
+        </div>
+    </div>
+
+    <div class="about-container" id="about-section">
+        <img src="social-modified.png" id="aboutimg" alt="" />
+
+        <div class="about-text" id="abouttext">
+            <p>Social Responsibilities</p>
+            <p>A few words</p>
+            <p>Being Associated with some of the reputed Non-Governmental Organisazations, I am Operational Manager at Shri Ajmer Singh Ji Foundation, accountable for the conduction and management of food distribution and medicine drives, blood camps, vaccination camps and social cause helping the needy, Also I am Core Member at NAI UMANG NGO, Panipat.
+            </p>
+
+            <a href="MuditArora_Resume_new.pdf" download> <button>Download Resume</button></a>
+        </div>
+    </div>
+
+
+    <div class="counter-up">
+        <div class="content">
+            <!-- <div class="box">
+                <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="counter">2100+ </div>
+                <div class="text">Downloads On Project</div>
+            </div> -->
+            <div class="box">
+                <div class="icon"><i class="fas fa-code"></i></div>
+                <div class="counter">2.5*</div>
+                <div class="text">LeetCoder</div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-book-reader"></i></div>
+                <div class="counter">250+</div>
+                <div class="text">problems solved </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <div class="counter">15+</div>
+                <div class="text">Events Managed</div>
+            </div>
+        </div>
+    </div>
+    <h1 id="skillsec">My Skills</h1>
+    <div class="skills-area">
+        <div class="skill">
+            <div class="skill-title">Languages (Java, Basic JavaScript)</div>
+            <div class="skill-bar"></div>
+            <div class="one1 skill-fill">
+                <span class="skill-percent">75%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Web Development (learning)</div>
+            <div class="skill-bar"></div>
+            <div class="two2 skill-fill">
+                <span class="skill-percent">50%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Problem Solving</div>
+            <div class="skill-bar"></div>
+            <div class="three3 skill-fill">
+                <span class="skill-percent">75%</span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-title">Management</div>
+            <div class="skill-bar"></div>
+            <div class="six6 skill-fill">
+                <span class="skill-percent">85%</span>
+            </div>
+        </div>
+    </div>
+    <div id="projectssec" class="services">
+        <div class="services-text">
+            <p>Projects</p>
+            <p>Services Required</p>
+            <p>
+                I have handled and completed several projects, either alone or working as part of a team. So far I have tried my hands on some Web Dev Projects with a vision to improve my skill sets and do bigger projects in the future.
+            </p>
+        </div>
+        <div class="misc"></div>
+        <div class="box-container">
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">End Game</p>
+                <p class="details">
+                    A CLI app built with <strong>NodeJS</strong> Have Fun! & Send it to your friends and find out who Really knows You.
+                </p>
+                <a href="https://endgamex.netlify.app" target="_blank"><button>Play Live</button></a>
+            </div>
+            <div class="box-2">
+                <span>2</span>
+                <p class="heading">Fun With Banana</p>
+                <p class="details">
+                    Build with help of JavaScript, HTML, CSS, It translates the Sentence in English to Banana Language
+                </p>
+                <a href="https://hello-banana.netlify.app/" target="_blank">
+                    <button>Live Project</button></a>
+            </div>
+            <!-- <div class="box-3">
+                <span>3</span>
+                <p class="heading">Learn & Groww</p>
+                <p class="details">
+                    A educational platform for students to find good resources to learn new technologies.
+                </p>
+                <a href="https://github.com/harry6003/LearnGrow" target="_blank"><button>Read more</button></a>
+            </div> -->
+        </div>
+
+
+    </div>
+
+    <!--TESTIMONIALS-->
+    <!-- <div id="testimonialssec" class="testimonials">
+        <div class="inner">
+            <h1>Testimonials</h1>
+            <div class="border"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQF41IbTZ2dUFg/profile-displayphoto-shrink_400_400/0/1610895407379?e=1629936000&v=beta&t=m5boQVu6rWneM5ljffmZKHve5fT_Ff0p8nUIMi37Kog" alt="" />
+                        <div class="name">Saunak Nag</div>
+                        <div class="desig">
+                            <p>Founder, Canine Media Pvt. Ltd.</p>
+                        </div>
+                        <p class="test-text">
+                            Sharannyo is a committed individual with great knowledge about the work he does. It has been a pleasure to work with as he is keen on learning new methods and keeping up with the digital era.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://media-exp1.licdn.com/dms/image/C5103AQFUiHTuOwP-uw/profile-displayphoto-shrink_400_400/0/1574675509785?e=1629936000&v=beta&t=wyTS8vWSkIroVISPvAYkEMI7qyuU80G4Tupfr7jBUcI" alt="" />
+                        <div class="name">Sohail Pathan</div>
+                        <div class="desig">
+                            <p>Program Manager, Coding Blocks</p>
+                        </div>
+                        <p class="test-text">
+                            Sharannyo has shown his outmost contribution when it comes to opportunity. Definitely an asset for any organization he would work with.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://media-exp1.licdn.com/dms/image/D4D35AQGuzu9GFjpbRQ/profile-framedphoto-shrink_400_400/0/1623586899704?e=1624374000&v=beta&t=omT1v4OM15jkFzIcg_aRc65kvjFNTggtumBnaJ-donk" alt="" />
+                        <div class="name">Shakti Singh</div>
+                        <div class="desig">
+                            <p>Program Manager, IncubateIND</p>
+                        </div>
+                        <p class="test-text">
+                            I have worked closely with Sharannyo during our Fellowship Program, he's a great innovator with knowledge and skill sets along with Community Reach in his other hand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <footer id="footer">
+        <p>Mudit Arora</p>
+        <p>
+            You can also follow me on the following platforms. Go and have a look !
+        </p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/muditarora26/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mudit7777"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/mdon_007/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/MuditArora16"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">Made with ❤️ by Mudit Arora</p>
+    </footer>
+    <div class="a-social-b">
+        <aside>
+            <a id="themechanger"><i class="fas fa-lightbulb"></i></a>
+        </aside>
+        <a href="https://www.linkedin.com/in/muditarora26/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/mudit7777"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/mdon_007/"><i class="fab fa-instagram"></i></a>
+
+        <a href="https://twitter.com/MuditArora16"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="arrow-btn">
+        <a href="#first"><span class="fas fa-angle-up"></span></a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200,
+            });
+        });
+    </script>
+    <script>
+        $("#themechanger").click(function() {
+            $("#woosh").toggleClass("light-theme");
+        });
+    </script>
+</body>
+
+</html>
